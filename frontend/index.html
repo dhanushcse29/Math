@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathhelp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-header-row">
+      <div class="navbar-brand">Mathhelp</div>
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+    </div>
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="#" id="login-link">Login</a></li>
+      <li><a href="#" id="dashboard-link">Dashboard</a></li>
+    </ul>
+    <div id="user-dropdown" class="user-dropdown" style="display:none;">
+      <span id="user-name"></span>
+      <div class="user-dropdown-menu">
+        <button id="navbar-logout-btn"><i class="bi bi-box-arrow-right"></i> Logout</button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="announcements-section">
+      <h2>Latest Announcements</h2>
+      <div id="announcements-list" class="announcements-scroll"></div>
+    </section>
+    <section class="hero">
+      <h1>Welcome to Mathhelp</h1>
+      <p>Your portal for maths study materials, announcements, and more.</p>
+      <button class="cta-btn" id="hero-cta">Get Started</button>
+    </section>
+    <section class="features">
+      <h2>Why Mathhelp?</h2>
+      <div class="features-list">
+        <div class="feature">
+          <span class="feature-icon"><i class="bi bi-journal-text"></i></span>
+          <h3>Easy Access</h3>
+          <p>All your maths notes and materials in one place, anytime.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><i class="bi bi-shield-lock"></i></span>
+          <h3>Secure</h3>
+          <p>Only students and teachers can access the content.</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon"><i class="bi bi-megaphone"></i></span>
+          <h3>Stay Updated</h3>
+          <p>Get the latest announcements and updates from your teacher.</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonials-list">
+        <div class="testimonial">
+          <div class="testimonial-avatar"><i class="bi bi-person-circle"></i></div>
+          <p>"Mathhelp made it so easy to find my study materials!"</p>
+          <span>– Student</span>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-avatar"><i class="bi bi-mortarboard"></i></div>
+          <p>"I love how I can upload notes and reach all my students instantly."</p>
+          <span>– Teacher</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">Mathhelp</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="#" id="footer-dashboard">Dashboard</a>
+      </div>
+      <div class="footer-copy">&copy; <span id="footer-year"></span> Mathhelp. All rights reserved.</div>
+    </div>
+  </footer>
+  <div id="modal-container"></div>
+  <script src="main.js"></script>
+</body>
+</html> 
